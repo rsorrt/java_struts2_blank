@@ -1,0 +1,1 @@
+<%@tag description="pathImg" pageEncoding="UTF-8" dynamic-attributes="dynattrs"%><%=request.getContextPath()%>/pages/img

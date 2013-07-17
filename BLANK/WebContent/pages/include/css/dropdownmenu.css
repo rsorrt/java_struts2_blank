@@ -1,0 +1,21 @@
+/* LIVELLO 1 */
+ul.dropdown { position: relative;}
+ul.dropdown li {float: left; margin-right: 5px;}
+ul.dropdown li a {font-size: .9em;font-:}
+ul.dropdown li.hover, ul.dropdown li:hover {background: #cccccc url(../../img/layout/submenu_bkg_2.jpg) top center repeat-x; position: relative;}
+ul.sub_menu li.hover, ul.sub_menu li:hover {background: #cccccc;}
+ul.dropdown li.hover a {}
+
+/* LIVELLO 2 */
+ul.dropdown ul {visibility: hidden; position: absolute; top: 100%; left: 0; z-index:100; }
+ul.dropdown ul li {margin-right: 0px; font-weight: normal; background: #f6f6f6; color: #000; 
+/*border-bottom: 1px solid #ccc;*/ float: none; }
+									  
+/* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a {width: 220px; display: inline-block; color: #000000; 
+border: 1px solid #ccc; margin: 0px;  padding-left: 5px; background: #f6f6f6;} 
+ul.dropdown ul li a:hover {width: 220px; background: #cccccc; border: 1px solid #ccc;} 
+
+/* LIVELLO 3 */
+ul.dropdown ul ul{ left: 100%; top: 0; }
+ul.dropdown li:hover > ul{ visibility: visible; }

@@ -1,0 +1,114 @@
+table.resultsTable{margin-top: 10px; margin-bottom: 10px;}
+/*table.resultsTable tr th{background: #022F58 url(../../img/sfumatura_2.jpg) left bottom repeat-x; color: #ffffff; font-weight: bold;}*/
+table.resultsTable tr th{background: #022F58 left bottom repeat-x; color: #ffffff; font-weight: bold;}
+table.resultsTable tr td{border-bottom: 1px solid #999999;}
+	
+.tableMenu {margin-top:0px; margin-bottom:10px; width:75%; }
+.tableMenu th{ text-align: left; font: 12px verdana, helvetica, sans-serif;  
+color:blue; padding:2px; vertical-align: top; }
+.tableMenu td{width:200px; padding: 13px; text-align: left; color:#5B5B5B; 
+font: 12px verdana, helvetica, sans-serif; vertical-align: top; }
+
+table.tableForm {background-color:#ffffff; border:1px solid #c3c3c3; border-spacing:3px; text-align: left; width:100%; margin:10px; }
+table.tableForm th {background-color:#C6CBCF; width:80px; padding:3px; vertical-align:top; text-align: left; }
+table.tableForm td {padding:3px; vertical-align:top; text-align: left; }
+ 
+table.tableInfo {background-color:#ffffff; border:1px dotted #c3c3c3; border-collapse:collapse; text-align: left; width:100%; margin:3px; padding:3px; margin-bottom:10px; }
+table.tableInfo th {background-color:#DBE2E8; width:80px; padding:3px; vertical-align:top; text-align: left; }
+table.tableInfo td {padding:3px; vertical-align:top; text-align: left; }
+
+.boxTableResult { padding:2px; margin:10px; overflow:auto; border:2px solid #1482B4; overflow-x: hidden; }
+table.tableResult {background-color:#ffffff; border-collapse:collapse; text-align: left; width:100%; }
+table.tableResult th { background-color:#DBE2E8; width:80px; padding:3px; vertical-align:top; text-align: left; }
+table.tableResult td { padding:3px; padding-left:10px; vertical-align:top; text-align: left; }
+
+/*
+table.tableResult thead{
+	position: absolute;
+}
+	
+table.tableResult tbody{
+	height: 50px;
+	owerflow: auto;
+}
+*/
+
+.tableLogin{border:1px solid gray; margin-bottom:5px; padding:10px; background:#DBE2E8; }
+.tableLogin td{vertical-align: top; padding:3px; }
+.tableLogin th{text-align: left; font: 10px verdana, helvetica, sans-serif; 
+color:blue; padding:2px; vertical-align: top; }
+
+
+.tableConfig { margin-top:0px; margin-bottom:10px; width:95%; }
+.tableConfig th{ text-align: left; background: seashell ; border-right: 1px solid #033059;  
+border-bottom: 1px solid gray; font: 10px verdana, helvetica, sans-serif;  
+color:blue; padding:3px; vertical-align: top; }
+.tableConfig td{ text-align: left; background: white ; border-right: 1px solid gray; 
+border-bottom: 1px solid #033059; font: 10px verdana, helvetica, sans-serif; color:#0D298E; 
+padding: 3px; vertical-align: top; }
+
+.one-column-emphasis {font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; 
+font-size: 12px; margin: 5px; text-align: left; border-collapse: collapse; }
+.one-column-emphasis th { font-size: 12px; font-weight: normal; padding: 5px 5px; 
+color: #039; vertical-align: top; }
+.one-column-emphasis td {padding: 10px 15px; color: #669; border-top: 1px solid #e8edff; 
+vertical-align: top; }
+.one-column-emphasis tr:hover td { color: #339; background: #eff2ff; }
+
+table.reference {background-color:#ffffff; border:1px solid #c3c3c3; 
+border-collapse:collapse; text-align: left; }
+table.reference th { background-color:#DBE2E8; padding:3px; vertical-align:top; 
+text-align: left; }
+table.reference td {padding:3px; vertical-align:top; text-align: left; }
+
+
+
+table.hoverTable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+table.hoverTable th {
+	background-color:#c3dde0;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.hoverTable tr {
+	background-color:#d4e3e5;
+}
+table.hoverTable tr:HOVER {
+	background-color:#ffff66;
+}
+table.hoverTable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+
+
+
+table.tableMenu {
+	border-spacing: 10px;
+	background-color:#ffffff;
+	width: 90%;
+	text-align: left; 
+	margin:3px; 
+	padding:3px; 
+	margin-bottom:10px; 
+}
+table.tableMenu th {
+	background-color:#DBE2E8;
+	border:1px solid #c3c3c3;
+	width:80px;
+	padding:3px;
+	vertical-align:top;
+	text-align: left; 
+	font-weight: bold;
+}
+table.tableMenu td {padding:3px; vertical-align:top; text-align: left; }

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+<!-- LAYOUT -->
+
+<!-- LAYOUT_EMPTY
+		solo content
+-->
+	<definition name="layout_empty" template="/WEB-INF/pages/tiles/layout/layout_empty.jsp">
+		<put-attribute name="content"  value="" />
+	</definition>
+
+
+
+<!-- LAYOUT EMPTY
+	title, menu, msg, content, footer
+-->
+	<definition name="layout" template="/WEB-INF/pages/tiles/layout/layout.jsp">
+		<put-attribute name="title"    value="" />
+		<put-attribute name="msg"      value="/WEB-INF/pages/tiles/msg.jsp" />
+		<put-attribute name="content"  value="" />
+		<put-attribute name="footer"   value="/WEB-INF/pages/tiles/footer.jsp" />
+	</definition>
+
+	
+	<definition name="layout_logged" template="/WEB-INF/pages/tiles/layout/layout:logged.jsp">
+		<put-attribute name="title"     value="" />
+		<put-attribute name="menuAdmin"  value="/WEB-INF/pages/tiles/menuAdmin.jsp" />
+		<put-attribute name="menu"      value="/WEB-INF/pages/tiles/menu.jsp"/>
+		<put-attribute name="istitutoInfo" value="/WEB-INF/pages/tiles/istitutoInfo.jsp" />
+		<put-attribute name="userInfo"  value="/WEB-INF/pages/tiles/userInfo.jsp" />
+		<put-attribute name="footer"    value="/WEB-INF/pages/tiles/footer.jsp" />
+		<put-attribute name="msg"       value="/WEB-INF/pages/tiles/msg.jsp" />
+		<put-attribute name="content"   value="" />
+	</definition>
+
+
+<!-- PAGES -->
+
+	<definition name="logout.tiles" extends="layout">
+		<put-attribute name="title" value="Logout" />
+		<put-attribute name="content" value="/WEB-INF/pages/logout.jsp" />
+	</definition>
+
+	<definition name="segnalazione.tiles" template="/WEB-INF/pages/secure/segnalazione.jsp" />
+
+
+	<definition name="menu.tiles" extends="layout_logged">
+		<put-attribute name="title" value="Menu" />
+		<put-attribute name="content" value="/WEB-INF/pages/secure/menu.jsp" />
+	</definition>
+
+
+<!-- /PAGES -->
+
+<!-- ERROR PAGES -->
+
+	<definition name="exception.tiles" extends="layout">
+		<put-attribute name="title"   value="Exception" />
+		<put-attribute name="content" value="/WEB-INF/pages/error/exception.jsp" />
+	</definition>
+
+	<definition name="error.tiles" extends="layout">
+		<put-attribute name="title"   value="VcWeb - Errore" />
+		<put-attribute name="content" value="/WEB-INF/pages/error/error.jsp" />
+	</definition>
+	
+	<definition name="errorStream.tiles" extends="layout_empty">
+		<put-attribute name="content" value="/WEB-INF/pages/error/errorStream.jsp" />
+	</definition>
+
+<!-- /ERROR PAGES -->
+
+
+
+	<definition name="test.tiles" extends="layout">
+		<put-attribute name="content" value="/WEB-INF/pages/test/test.jsp" />
+	</definition>
+
+	
+</tiles-definitions>

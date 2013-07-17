@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	
+	<constant name="struts.locale" value="it_IT" />
+	<constant name="struts.custom.i18n.resources" value="ApplicationResources" />
+	
+	<constant name="struts.ui.templateDir" value="template" />
+	<constant name="struts.ui.theme" value="simple" />
+	
+	<!-- uso dei metodi statici nei tag jsp
+	esempio:
+		@applicationVisure.constant.ConstantVisure@cciaaProvince
+	chiama il metodo statico:
+	 	applicationVisure.constant.ConstantVisure.cciaaProvince()
+	
+	ATTENZIONE:
+		se getConfig è un metodo statico
+		<s:set name="APP_CONFIG"   value="#session.APP_RESOURCES.config"/>
+		questo funziona solo se  struts.ognl.allowStaticMethodAccess è TRUE
+		s:if test="#APP_CONFIG.test">
+	-->
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	
+	<constant name="struts.action.excludePattern" 
+		value="/*.htm, /*.html, /servlet/.*"/>
+
+	
+<!--  CONVENTION PLUG-IN -->
+	<!-- constant name="struts.convention.action.disableScanning" value="false" /-->
+	
+	<!-- Convention plugin can automatically reload 
+	configuration changes, made in classes the contain actions,
+	without restarting the container -->
+	<constant name="struts.convention.classes.reload" value="true" />
+
+	<constant
+		name="struts.convention.action.disableScanning"
+		value="false"
+	/>
+		
+	<!-- in quali package cercare le action -->
+	<!--constant 
+		name="struts.convention.action.packages"
+		value="application.struts2.action,
+		       application.struts2.action.login"
+	/-->
+
+	<!-- cerca le action solo nei package il cui nome contiene struts2  -->
+	<constant name="struts.convention.package.locators" 
+		value="struts2"
+	/>
+
+
+	<!-- dove trovare le pagine result per le action -->
+	<constant name = "struts.convention.result.path" value="/pages" />
+	
+<!-- /CONVENTION PLUG-IN -->
+
+	
+	<package name="my-default" extends="struts-default" namespace="">
+ 	
+		<!--result-types -->
+		<result-types>
+			<result-type name="tiles"
+				class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+
+
+		<!--global-results -->
+		<global-results>
+			<result name="login"        type="redirect">/Login</result>
+			<result name="error"        type="redirect">/Error</result>
+		</global-results>
+
+		
+		<action name="" >
+			<result type="redirect">/XssoLogin</result>
+		</action>
+		
+		
+		<!-- ERROR -->
+		<action name="Error">
+			<result type="tiles">error.tiles</result>
+		</action>
+		
+		
+		
+		<!-- LOGOUT -->
+		<action name="Logout">
+			<result type="tiles">logout.tiles</result>
+		</action>
+
+
+	</package>
+
+	
+</struts>

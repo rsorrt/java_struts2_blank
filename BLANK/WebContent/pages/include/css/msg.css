@@ -1,0 +1,74 @@
+#msgAdminOnly{
+ padding:5px;
+ margin:3px;
+}
+
+
+.msg {
+	
+font-size: 100%;
+
+padding: 5px;
+
+border-style: solid;
+border-width: 1px 1px 1px 8px;
+border-color: #cccccc;
+
+background-color: #f4f4f4;
+background-position:2px 2px;
+
+width:80%;
+
+min-height:50px; important!
+
+overflow: auto;
+
+margin-top:4px;
+margin-bottom:4px;
+
+moz-border-radius:10px;
+webkit-border-radius:10px;
+
+color:#2849AD;
+font-weight:normal;
+font-size:12px;
+
+padding:10px;
+padding-top:12px;
+padding-left:60px;
+
+min-height:30px;
+
+}
+
+
+/*img size: 32x32*/
+.msg.img {
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	background-image: url(../../img/msg/info.png);
+}
+
+.msg.img.help {
+	background-image: url(../../img/msg/help.png);
+}
+
+.msg.img.note {
+	background-image: url(../../img/msg/note.png);
+}
+
+.msg.img.debug {
+	background-image: url(../../img/msg/debug.png);
+}
+
+.msg.img.warn {
+	background-image: url(../../img/msg/warn.png);
+}
+
+.msg.img.error {
+	background-image: url(../../img/msg/error.png)
+}
+
+.msg.img.fatal {
+	background-image: url(../../img/msg/fatal.png);
+}

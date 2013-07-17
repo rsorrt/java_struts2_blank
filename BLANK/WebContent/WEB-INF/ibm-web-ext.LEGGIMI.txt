@@ -1,0 +1,34 @@
+<!-- FILE PER WEBSPHERE -->
+<!--
+1). Open the WEB-INF/ibm-web-ext.xmi file. JSP engine configuration parameters are stored in a web module's configuration directory or in a web modules's binaries directory in the WEB-INF/ibm-web-ext.xmi file. 
+
+Open the WEB-INF/ibm-web-ext.xmi file from:
+* The configuration directory, as in the following example: {WAS_ROOT}/profiles//profilename//config/cells//cellname//applications//enterpriseappname//deployments//deployedname///webmodulename/ 
+
+* The binaries directory if an application was deployed into WebSphere Application Server with the flag "Use Binary Configuration" set to true. An example of a binaries directory is: {WAS_ROOT}/profiles//profilename//installedApps//nodename///EnterpriseAppName///WebModuleName//
+
+2). Edit the WEB-INF/ibm-web-ext.xmi file. * To add configuration parameters, use the following format: xmi:id="JSPAttribute_6" name="parametername" value="parametervalue"/> 
+
+* To delete configuration parameters, either delete the line from the file, or enclose the statement with <!-- --> tags.
+
+3). Save the file. 
+ 
+4). Restart the Enterprise Application. It is not necessary to restart the server for parameter changes to take effect. However, some JSP engine configuration parameters affect the Java source code that is generated for a JSP. If such a parameter is changed, then you must retranslate the JSP files in the Web module to regenerate Java source. You can use the batch compiler to retranslate all JSP files in a Web module. The batch compiler uses the JSP engine configuration parameters that you have set in the ibm-web-ext.xmi file, unless you specifically override them. 
+The topic JSP engine configuration parameters"
+<http://publib.boulder.ibm.com/infocenter/wasinfo/v6r1/topic/com.ibm.websphere.nd.doc/info/ae/ae/rweb_jspengine.html> 
+-->
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.ejs.models.base.extensions.webappext:WebAppExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.ejs.models.base.extensions.webappext="webappext.xmi" xmi:id="WebAppExtension_1248791252484">
+ 
+ <webApp href="WEB-INF/web.xml#WebApp_9"/>
+ 
+ <jspAttributes xmi:id="JSPAttribute_1" name="jdkSourceLevel" 	value="15"/> 
+
+ <jspAttributes xmi:id="JSPAttribute_1248791252484" name="reloadEnabled" 	value="true"/>
+ <jspAttributes xmi:id="JSPAttribute_1248791252485" name="reloadInterval" 	value="10"/>
+
+ 
+ 
+</com.ibm.ejs.models.base.extensions.webappext:WebAppExtension>

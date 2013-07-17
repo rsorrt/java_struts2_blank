@@ -1,0 +1,51 @@
+.notice-wrap {
+	position: fixed;
+	top: 50%;
+	right: 25%;
+	width: 450px;
+	
+	z-index: 9999;
+	
+	}
+
+* html .notice-wrap {
+	position: absolute;
+	
+}
+ 
+.notice-item {
+
+	height: 50px;
+	
+	background: #ffffcc;
+	
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	
+	padding: 25px 10px 5px 35px;
+	font-family: verdana;
+	font-size: 12px;
+	/*font-weight:bold;*/
+	/*border: 2px solid #999;*/
+	border:1px solid #F0B802;
+	display: block;
+	position: relative;
+	margin: 0 0 12px 0;
+	
+	
+
+	
+}
+
+.notice-item-close {
+	position: absolute;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	right: 6px;
+	top: 6px;
+	cursor: pointer;
+}
+
+	
+

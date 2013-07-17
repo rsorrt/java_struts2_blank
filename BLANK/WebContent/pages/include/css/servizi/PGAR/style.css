@@ -1,0 +1,63 @@
+/*======= GENERIC ===============*/
+body {margin:0; padding:0; color:#003366; text-align: left; font-family:Verdana; font-size:12px;}
+.clear{clear: both;}
+/*======= CONTAINER ===============*/
+#container{width: 960px; margin:auto;  margin-top: 0px; padding-top: 0px;}
+/*======= HADER ===============*/
+#header{margin-top: 0px; border-top: solid 5px #022F58; padding-top: 5px;}
+
+#istitutoInfo {float:left; width: 180px; height:50px;  font-size: 12px; color: red; font-weight: bold;}
+
+#titoloApplicazione_box{float:left; width: 480px; height: 50px; margin-top:0px; text-align: center;}
+#titoloApplicazione_inner{margin:auto; width: 500px; height: 50px;}
+#titoloApplicazione_sx{float: left;  background: url(../../img/layout/titleapp_sx.jpg) top right no-repeat; width: 20px; height: 50px;}
+#titoloApplicazione_dx{float: left;  background: url(../../img/layout/titleapp_dx.jpg) top left no-repeat; width: 20px; height: 50px;}
+#titoloApplicazione_center{float: left; background: url(../../img/layout/titleapp_bkg.jpg) top center repeat-x; width: 400px; height: 30px;  padding-bottom: 4px; padding-top: 16px; padding-left: 10px; padding-right: 10px; font-size: 15px; font-weight: bold; text-align:center;}
+
+#user_box{float:right; width: 270px; height: 50px; text-align: center;}
+#user_inner{height: 50px; margin:auto;}
+#user_sx{float: left;  background: url(../../img/layout/titleapp_sx.jpg) top right no-repeat; width: 20px; height: 50px;}
+#user_dx{float: left;  background: url(../../img/layout/titleapp_dx.jpg) top left no-repeat;  width: 20px; height: 50px;}
+#user_center{float: left; background: url(../../img/layout/titleapp_bkg.jpg) top center repeat-x; width: 200px; height: 35px;  padding-bottom: 5px; padding-top: 10px; padding-left: 10px; padding-right: 10px; font-size: 10px; font-weight: bold; text-align:center;}
+/*======== FOOTER ==============*/
+#footer{width: 100%; border-top: solid 1px #022F58; text-align: center; padding-top: 5px; margin-top: 3px; margin-top: 20px; }
+#footer a{color: #000000; text-decoration: none;}
+/*======= CONTENT ===============*/
+#content{/*background: #D2DAE1 url(../../img/layout/content_bkg.jpg) left top repeat-x;*/ border: 0; /*padding: 4px;*/}
+#content_inner{padding: 10px; background-color: #ffffff;}
+/*==== MAIN MENU =================*/
+.mainMenu{min-height:26px;  background: #022F58 url(../../img/layout/submenu_bkg.jpg) bottom center repeat-x; padding-left: 10px; padding-right: 10px; border-bottom: 1px solid #022F58; }
+.mainMenu ul{ margin:0; padding:0; list-style:none;}
+.mainMenu ul li{float:left;}
+.mainMenu ul li a{display:block; padding-left: 10px; padding-right: 10px; line-height:26px; margin-right: 5px; text-align:left; color: #ffffff; font-weight: bold; text-decoration: none;}
+.mainMenu ul li a.active{background: url../../img/layout/submenu_bkg_2.jpg) bottom center repeat-x;}
+/*==== MESSAGGI ERRORE ED INFORMAZIONE =================*/
+.errorMsgsBox{background: url(../../img/layout/error_icon.jpg) 5px 5px no-repeat; border: 1px solid #FF0000; padding: 5px; padding-left: 45px; margin: 10px;  min-height: 30px; height: auto !important; height: 30px;}
+.errorMsgsBoxRow{color: #FF0000; font-weight: bold;}
+.infoMsgsBox{background: url(../../img/layout/info_icon.jpg) 5px 5px no-repeat; border: 1px solid #022F58; padding: 5px; padding-left: 45px; margin: 10px; min-height: 30px; height: auto !important; height: 30px;}
+.infoMsgsBoxRow{color: #022F58; font-weight: bold;}
+/*==== BREADCRUMB =================*/
+.breadcrumb{font-size: 12px; margin-bottom: 16px; color: #022F58; font-weight:bold; background-color: #DBE2E8; padding: 3px;}
+.breadcrumb a{text-decoration: none; padding:4px;}
+.breadcrumb a:hover {background:#E8F2FE;}
+/*==== TITOLO PAGINA =================*/
+.innerTitle{border-bottom: 1px dashed #cacaca; font-size: 14px; margin-bottom: 15px; font-weight:bold;}
+/*==== FORM =================*/
+label {font-weight: bold;}
+/*==== TABELLA RISULTATI =================*/
+table.resultsTable{margin-top: 10px; margin-bottom: 10px;}
+table.resultsTable tr th{background: #022F58 url(../../img/layout/sfumatura_2.jpg) left bottom repeat-x; color: #ffffff; font-weight: bold;}
+table.resultsTable .odd{ background-color:#EEE; }
+table.resultsTable .even{ background-color:#DDD; }
+/*==== ACCESSO NEGATO =================*/
+#box_accesso_negato{ background: url(../../img/layout/accesso_vietato.jpg) 5px 5px no-repeat;  min-height: 50px; height: auto !important; height: 50px;  border: 1px solid #FF0000;font-size: 18px; text-align:center; font-weight: bold; margin-top: 40px; margin-bottom: 40px; padding-top: 5px;}
+/*=====================*/
+.sectionTitle{font-size: 12px; margin-top: 8px; margin-bottom: 8px; color: #022F58; font-weight:bold; background-color: #DBE2E8; padding: 3px;}
+.sectionOpen{}
+.sectionClose{display:none;}
+/*==== OVERRIDE JQUERY =================*/
+.ui-autocomplete { max-height: 100px; overflow-y: auto; overflow-x: hidden; padding-right: 20px;}
+/* IE 6 doesn't support max-height
+* we use height instead, but this forces the menu to always be this tall
+*/
+* html .ui-autocomplete {height: 100px;}

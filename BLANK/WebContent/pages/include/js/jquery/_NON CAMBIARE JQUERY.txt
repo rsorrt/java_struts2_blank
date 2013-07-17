@@ -1,0 +1,8 @@
+non cambiare la versione di 
+JQUERY e/o JQUERY_UI
+perchè si hanno problemi
+
+esempio:
+
+cambiando jquery-UI non va più il plugin corner
+cambiando jquery si hanno errori javascript perchè poi ci sono problemi con il jquery-ui vecchio.
